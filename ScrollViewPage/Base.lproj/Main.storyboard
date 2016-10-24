@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="0I1-Lw-mLX"/>
@@ -27,22 +27,21 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="3OK-U8-Cnp"/>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qae-Qv-74b"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qae-Qv-74b">
+                                <frame key="frameInset" minX="81.666666666666686" width="251" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ypf-gt-XVK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0Uw-Qb-ZJ2"/>
                             <constraint firstItem="Ypf-gt-XVK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3Jg-mD-CC7"/>
                             <constraint firstAttribute="trailing" secondItem="3OK-U8-Cnp" secondAttribute="trailing" id="DXU-cd-hx9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qae-Qv-74b" secondAttribute="bottom" id="GE3-18-zYn"/>
                             <constraint firstAttribute="trailing" secondItem="0I1-Lw-mLX" secondAttribute="trailing" id="N3P-ht-d6p"/>
                             <constraint firstItem="0I1-Lw-mLX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V0w-3u-cJG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3OK-U8-Cnp" secondAttribute="bottom" id="Xkg-yu-ggt"/>
-                            <constraint firstItem="Qae-Qv-74b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bp1-rs-CBI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0I1-Lw-mLX" secondAttribute="bottom" id="dP6-Xv-kgj"/>
                             <constraint firstItem="0I1-Lw-mLX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gNa-Ou-r3C"/>
-                            <constraint firstAttribute="trailing" secondItem="Qae-Qv-74b" secondAttribute="trailing" id="sIc-co-7w2"/>
-                            <constraint firstItem="Qae-Qv-74b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sYi-fs-LC6"/>
                             <constraint firstItem="3OK-U8-Cnp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y8s-Ux-1y9"/>
                         </constraints>
                     </view>
