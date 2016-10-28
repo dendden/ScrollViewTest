@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2333a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,31 +22,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="0I1-Lw-mLX"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sky" translatesAutoresizingMaskIntoConstraints="NO" id="0I1-Lw-mLX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="Ypf-gt-XVK">
+                                <rect key="frame" x="189" y="28" width="115" height="95"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="95" id="Spk-Cj-rxF"/>
-                                    <constraint firstAttribute="width" constant="115" id="pWm-xL-8yt"/>
+                                    <constraint firstAttribute="height" constant="95" id="6Zb-Bi-xHs"/>
+                                    <constraint firstAttribute="width" constant="115" id="6kE-Ov-tn6"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="3OK-U8-Cnp"/>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qae-Qv-74b"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mountains" translatesAutoresizingMaskIntoConstraints="NO" id="3OK-U8-Cnp">
+                                <rect key="frame" x="0.0" y="468" width="320" height="100"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qae-Qv-74b">
+                                <rect key="frame" x="70" y="0.0" width="180" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="JFL-S5-cgD"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ypf-gt-XVK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0Uw-Qb-ZJ2"/>
-                            <constraint firstItem="Ypf-gt-XVK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3Jg-mD-CC7"/>
-                            <constraint firstAttribute="trailing" secondItem="3OK-U8-Cnp" secondAttribute="trailing" id="DXU-cd-hx9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qae-Qv-74b" secondAttribute="bottom" id="GE3-18-zYn"/>
-                            <constraint firstAttribute="trailing" secondItem="0I1-Lw-mLX" secondAttribute="trailing" id="N3P-ht-d6p"/>
-                            <constraint firstItem="0I1-Lw-mLX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V0w-3u-cJG"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3OK-U8-Cnp" secondAttribute="bottom" id="Xkg-yu-ggt"/>
-                            <constraint firstItem="Qae-Qv-74b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bp1-rs-CBI"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0I1-Lw-mLX" secondAttribute="bottom" id="dP6-Xv-kgj"/>
-                            <constraint firstItem="0I1-Lw-mLX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gNa-Ou-r3C"/>
-                            <constraint firstAttribute="trailing" secondItem="Qae-Qv-74b" secondAttribute="trailing" id="sIc-co-7w2"/>
-                            <constraint firstItem="Qae-Qv-74b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sYi-fs-LC6"/>
-                            <constraint firstItem="3OK-U8-Cnp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y8s-Ux-1y9"/>
+                            <constraint firstItem="Qae-Qv-74b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9gc-L3-E8i"/>
+                            <constraint firstItem="0I1-Lw-mLX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H2A-6a-bn9"/>
+                            <constraint firstItem="0I1-Lw-mLX" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="TNy-Qc-pSy"/>
+                            <constraint firstItem="3OK-U8-Cnp" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ThP-9y-Ky1"/>
+                            <constraint firstItem="0I1-Lw-mLX" firstAttribute="trailing" secondItem="3OK-U8-Cnp" secondAttribute="trailing" id="Tj5-zO-58v"/>
+                            <constraint firstItem="0I1-Lw-mLX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="YvN-8b-x0d"/>
+                            <constraint firstAttribute="trailing" secondItem="0I1-Lw-mLX" secondAttribute="trailing" id="ZGS-7N-8Lo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qae-Qv-74b" secondAttribute="bottom" id="cAx-Cm-R8Q"/>
+                            <constraint firstItem="0I1-Lw-mLX" firstAttribute="leading" secondItem="3OK-U8-Cnp" secondAttribute="leading" id="fVq-jY-pD2"/>
+                            <constraint firstItem="Ypf-gt-XVK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="leE-Vo-30f"/>
+                            <constraint firstItem="Ypf-gt-XVK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="uOR-0n-LwT"/>
+                            <constraint firstItem="Qae-Qv-74b" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="xxJ-wm-D9k"/>
                         </constraints>
                     </view>
                     <connections>
@@ -51,6 +63,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="nNM-NV-fOz">
+                    <connections>
+                        <action selector="rightSwipe:" destination="BYZ-38-t0r" id="68P-z1-Xz6"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="Qny-1y-JDU">
+                    <connections>
+                        <action selector="leftSwipe:" destination="BYZ-38-t0r" id="3Qy-Ma-B3A"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
